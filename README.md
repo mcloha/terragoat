@@ -32,6 +32,7 @@ TerraGoat was built to enable DevSecOps design and implement a sustainable misco
 
 TerraGoat follows the tradition of existing *Goat projects that provide a baseline training ground to practice implementing secure development best practices for cloud infrastructure.
 
+
 ## Important notes
 
 * **Where to get help:** the [Bridgecrew Community Slack](https://slack.bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=terragoat)
