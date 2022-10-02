@@ -20,6 +20,9 @@ resource "alicloud_oss_bucket" "trail" {
     git_repo             = "terragoat"
     yor_trace            = "9ce7077b-8195-4e71-aec6-ed1f769555dc"
   }
+  transfer_acceleration {
+    enabled = true
+  }
 }
 
 resource "alicloud_ram_role" "trail" {
