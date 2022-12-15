@@ -12,3 +12,10 @@ resource "azurerm_resource_group" "example" {
     yor_trace            = "80b3b0ca-e0d8-4266-8a1f-12c71afd7e18"
   }
 }
+
+resource "azurerm_app_service" "example" {
+  name                = "example-app-service"
+  location            = resource_group_name = azurem_resource_group.example.location
+  resource_group_name = azurem_resource_group.example.name
+  app_service_plan_id = azurem_resource_group.example.id
+}
