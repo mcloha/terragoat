@@ -24,8 +24,9 @@ resource azurerm_app_service "app-service1" {
   location            = var.location
   name                = "terragoat-app-service-${var.environment}${random_integer.rnd_int.result}"
   resource_group_name = azurerm_resource_group.example.name
-  https_only          = false
+  https_only          = true
   site_config {
+    http2_enabled = true
     min_tls_version = "1.1"
   }
   tags = {
